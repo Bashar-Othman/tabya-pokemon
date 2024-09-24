@@ -1,0 +1,28 @@
+<div class="container">
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input [formControl]="searchControl" type="text" placeholder="Search Pokémon" class="search-input"/>
+    </div>
+  
+    <!-- Pokémon List -->
+    <div *ngIf="filteredPokemon.length > 0">
+      <ul class="pokemon-list">
+        <li *ngFor="let pokemon of filteredPokemon">
+          {{ pokemon.name  }}
+        </li>
+      </ul>
+    </div>
+    
+    <!-- No Results -->
+    <div *ngIf="filteredPokemon.length === 0">
+      <p>No Pokémon found matching your search.</p>
+    </div>
+  
+    <!-- Pagination Controls -->
+    <div class="pagination">
+      <button (click)="previousPage()" [disabled]="!previous">Previous</button>
+      <span>Showing {{ offset + 1 }} to {{ offset + limit }} of {{ count }} Pokémon</span>
+      <button (click)="nextPage()" [disabled]="!next">Next</button>
+    </div>
+  </div>
+  

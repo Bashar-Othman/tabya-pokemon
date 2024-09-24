@@ -1,0 +1,45 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pokemon-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pokemon-list li {
+    padding: 10px;
+    background: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+  }
+  
